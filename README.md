@@ -1,0 +1,2 @@
+# cabocha-wrapper
+CaboCha::Wrapper
