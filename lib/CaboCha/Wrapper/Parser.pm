@@ -4,17 +4,17 @@ use Moose;
 use Data::Dumper;
 
 has 'args' => (
-	is			=> 'ro',
-	isa			=> 'Str',
-	required	=> 0,
-	default     => q{},
+    is          => 'ro',
+    isa         => 'Str',
+    required    => 0,
+    default     => q{},
 );
 
 
 has 'parser' => (
-	is		=> 'ro',
-	isa		=> 'CaboCha::Parser',
-	writer	=> '_parser',
+    is      => 'ro',
+    isa     => 'CaboCha::Parser',
+    writer  => '_parser',
 );
 
 
@@ -33,8 +33,8 @@ sub parse_to_string {
 
 sub parse {
     my $self = shift;
-	my $tree = $self->parser->parse(@_);
-	return CaboCha::Wrapper::Tree->new( 'cabocha_tree' => $tree );
+    my $tree = $self->parser->parse(@_);
+    return CaboCha::Wrapper::Tree->new( 'cabocha_tree' => $tree );
 }
 
 
