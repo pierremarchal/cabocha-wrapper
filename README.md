@@ -1,2 +1,11 @@
 # cabocha-wrapper
-CaboCha::Wrapper
+A wrapper for CaboCha Perl module.
+
+## Installation
+
+```
+cpan .
+```
+
+
+
